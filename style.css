@@ -1,0 +1,173 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background: linear-gradient(45deg, #240165, #05001c);
+  font-family: "Tajawal", sans-serif;
+}
+
+section {
+  padding: 50px;
+  height: 100vh;
+  
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+
+section .title .city-name {
+  color: white;
+  margin-right:40px ;
+  }
+section .title .city-name h1{
+  font-size: 100px;
+  font-weight: 400;
+}
+section .title .city-name h6{
+  font-size: 40px;
+  font-weight: 200;
+}
+hr{
+  margin: 0 50px;
+  border-color:#5200e1;
+}
+section .title p{
+  font-size: 40px;
+  border-bottom: 2px solid white;
+}
+
+section .times {
+  height: 300px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .times .card{
+  width: 12%;
+  height: 50%;
+  background-color: white;
+  font-size: 20px;
+  box-shadow: 0px 10px 5px rgb(0 0 0 / 30%);
+
+}
+section .times .card .header{
+  background:linear-gradient(45deg, #5709ee , #7a37bf);
+  color: white;
+}
+section .times .card .header h1{
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+}
+section .times .card .body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  
+}
+section .times .card .body h1{
+  font-size:35px ;
+  font-weight: 700;
+
+}
+
+.city-select{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.city-select select { 
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 5px 20px 5px 10px;
+  border: 2px solid #7a37bf;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.city-select select:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.city-select select option {
+  background-color: #1a0033;
+  color: white;
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+  section .times {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section .title .city-name h1 {
+    font-size: 60px;
+  }
+
+  section .title .city-name h6 {
+    font-size: 25px;
+  }
+
+  section .title p {
+    font-size: 25px;
+  }
+
+  section .times .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  
+  section .times .card {
+    width: 28%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  section .times .card .body h1{
+    font-size: 40px;
+  }
+
+  section .title .city-name h1 {
+    font-size: 80px;
+  }
+
+  section .title .city-name h6 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 500px) {
+  
+  section .times .card {
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  section .times .card .body h1{
+    font-size: 40px;
+  }
+
+  section .title .city-name h1 {
+    font-size: 80px;
+  }
+
+  section .title .city-name h6 {
+    font-size: 35px;
+  }
+}

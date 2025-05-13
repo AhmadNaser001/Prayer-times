@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- CITY NAME + DATE -->
+      <div class="title">
+        <!-- CITY NAME  -->
+        <div class="city-name">
+          <h1 id="city-name">اربد</h1>
+          <h6 id="date"></h6>
+        </div>
+        <hr />
+        <!-- CITY NAME  -->
+      </div>
+      <!-- CITY NAME + DATE -->
+      <!-- CHANGE CITY SELECT -->
+      <div class="city-select">
+        <select name="" id="cities-select"></select>
+      </div>
+      <!-- CHANGE CITY SELECT -->
+      <!-- PRAYER TIMINGS -->
+      <div class="times">
+        <div class="card">
+          <div class="header">
+            <h1>الفجر</h1>
+          </div>
+          <div class="body">
+            <h1 id="fajr-time">00:00</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>الشروق</h1>
+          </div>
+          <div class="body">
+            <h1 id="sunrise-time">00:00</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>الظهر</h1>
+          </div>
+          <div class="body">
+            <h1 id="dhuhr-time">00:00</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>العصر</h1>
+          </div>
+          <div class="body">
+            <h1 id="asr-time">00:00</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>المغرب</h1>
+          </div>
+          <div class="body">
+            <h1 id="sunset-time">00:00</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>العشاء</h1>
+          </div>
+          <div class="body">
+            <h1 id="isha-time">00:00</h1>
+          </div>
+        </div>
+      </div>
+      <!-- PRAYER TIMINGS -->
+    </section>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
